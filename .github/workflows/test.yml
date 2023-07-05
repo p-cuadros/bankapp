@@ -24,14 +24,14 @@ jobs:
         test-assembly-dll: Bank.Domain.Tests.dll
         output-html: Bank.html
         framework: net7.0
-        upload-artifact: false
-    - name: Setup Pages
-      uses: actions/configure-pages@v3
+#        upload-artifact: false
+#    - name: Setup Pages
+#      uses: actions/configure-pages@v3
 
   deploy:
     name: Deploy GP
     needs: build 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - name: Download artifact
       uses: actions/download-artifact@v3
@@ -41,8 +41,8 @@ jobs:
         path: ./build    
     #- name: Checkout
     #    uses: actions/checkout@v3
-    #- name: Setup Pages
-    #  uses: actions/configure-pages@v3
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
     #- name: Upload artifact
     #  uses: actions/upload-pages-artifact@v1
     #  with:
