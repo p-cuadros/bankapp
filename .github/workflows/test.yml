@@ -14,7 +14,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 7.0.x
-    - name: Test specflow
+    - name: Test Specflow
       uses: actions/cryptic-wizard/run-specflow-tests@v1.3.2
       with:
         test-assembly-path: Bank.Domain.Tests/bin/Release/net7.0
