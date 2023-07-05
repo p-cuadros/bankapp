@@ -27,6 +27,7 @@ jobs:
 
   deploy:
     name: Deploy GP
+    needs: build 
     runs-on: ubuntu-latest
     steps:
     - name: Download artifact
