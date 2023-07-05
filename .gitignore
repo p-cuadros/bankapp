@@ -1,0 +1,13 @@
+*.suo
+*.user
+*.puml
+_ReSharper.*
+bin
+obj
+packages
+Migrations
+Coverage
+Cobertura
+TestResults
+.vscode
+.sonarqube
