@@ -24,6 +24,7 @@ jobs:
         test-assembly-dll: Bank.Domain.Tests.dll
         output-html: Bank.html
         framework: net7.0
+        #upload-artifact: false
 
   deploy:
     name: Deploy GP
@@ -34,7 +35,7 @@ jobs:
       uses: actions/download-artifact@v3
       # Downloads the uploaded files
       with:
-        name: production
+        name: Specflow Test Results
         path: ./build    
     #- name: Checkout
     #    uses: actions/checkout@v3
