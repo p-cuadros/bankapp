@@ -14,3 +14,14 @@ C -->|Two| E[Result 2]
 ```plantuml
 Bob -> Alice : hello
 ```
+
+
+# [Linux](#tab/linux)
+
+Content for Linux...
+
+# [Windows](#tab/windows)
+
+Content for Windows...
+
+---
